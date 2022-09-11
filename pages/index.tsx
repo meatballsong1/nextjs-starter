@@ -2,6 +2,7 @@ import { Container, Flex, Heading, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Counter from "@/counter";
 import ColormodeToggle from "@/colormodeToggle";
+import Link from "next/link";
 
 const Home: NextPage = () => {
 	return (
@@ -14,6 +15,10 @@ const Home: NextPage = () => {
 			<Text my={6}>Next.js starter for NextJS apps.</Text>
 
 			<Counter />
+
+			<Link href="/page">
+				<a>Open page</a>
+			</Link>
 		</Container>
 	);
 };
