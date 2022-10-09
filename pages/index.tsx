@@ -1,8 +1,9 @@
 import { Container, Flex, Heading, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
-import Counter from "@/counter";
-import ColormodeToggle from "@/colormodeToggle";
 import Link from "next/link";
+
+import ColormodeToggle from "@/colormodeToggle";
+import Counter from "@/counter";
 
 const Home: NextPage = () => {
 	return (

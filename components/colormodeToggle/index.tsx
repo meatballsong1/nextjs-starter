@@ -1,7 +1,7 @@
-import { IconButton, propNames } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import type { NextPage } from "next";
+import { IconButton } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
+import type { NextPage } from "next";
 
 const ColormodeToggle: NextPage = () => {
 	const { colorMode, toggleColorMode } = useColorMode();

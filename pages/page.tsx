@@ -1,10 +1,11 @@
 import { Container, Flex, Heading, Text } from "@chakra-ui/react";
-import type { NextPage } from "next";
-import ColormodeToggle from "@/colormodeToggle";
-import Link from "next/link";
-import { useDebouncedValue } from "@mantine/hooks";
-import { useState } from "react";
 import { Input } from "@chakra-ui/react";
+import { useDebouncedValue } from "@mantine/hooks";
+import type { NextPage } from "next";
+import Link from "next/link";
+import { useState } from "react";
+
+import ColormodeToggle from "@/colormodeToggle";
 
 const Home: NextPage = () => {
 	const [value, setValue] = useState("");

@@ -1,3 +1,5 @@
+[Buy me a coffee](https://www.buymeacoffee.com/posandu)
+
 This is a [Next.js](https://nextjs.org/) starter app with [Chakra UI](https://chakra-ui.com/) and [TypeScript](https://www.typescriptlang.org/).
 
 ## Getting Started

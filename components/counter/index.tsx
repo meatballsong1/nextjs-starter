@@ -1,7 +1,7 @@
 import { Button, Text } from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import { useState } from "react";
-import { useToast } from "@chakra-ui/react";
 
 const Counter: NextPage = () => {
 	const [count, setCount] = useState(0);
