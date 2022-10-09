@@ -18,7 +18,10 @@ const Home: NextPage = () => {
 				<ColormodeToggle />
 			</Flex>
 
-			<Input value={value} onChange={(event) => setValue(event.target.value)} />
+			<Input
+				value={value}
+				onChange={(event) => setValue(event.target.value)}
+			/>
 			<Text>Debounced Value: {debouncedValue}</Text>
 
 			<Link href="/">
