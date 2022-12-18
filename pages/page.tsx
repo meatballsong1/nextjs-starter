@@ -1,6 +1,5 @@
 import { Container, Flex, Heading, Text } from "@chakra-ui/react";
 import { Input } from "@chakra-ui/react";
-import { useDebouncedValue } from "@mantine/hooks";
 import type { NextPage } from "next";
 import Link from "next/link";
 import { useState } from "react";
@@ -9,7 +8,6 @@ import ColormodeToggle from "@/colormodeToggle";
 
 const Home: NextPage = () => {
 	const [value, setValue] = useState("");
-	const [debouncedValue] = useDebouncedValue(value, 500);
 
 	return (
 		<Container maxW="4xl" p={4}>
@@ -22,7 +20,8 @@ const Home: NextPage = () => {
 				value={value}
 				onChange={(event) => setValue(event.target.value)}
 			/>
-			<Text>Debounced Value: {debouncedValue}</Text>
+
+			<Text my={6}>This is a page. {value}</Text>
 
 			<Link href="/">
 				<a>Home</a>
